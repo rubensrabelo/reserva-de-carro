@@ -8,7 +8,7 @@ class CarTest {
 
     @Test
     @DisplayName("Deve calcular o valor correto do aluguel")
-    void calculateRentalValueTest(){
+    void calculateRentalValue(){
         Car car = new Car("Sedan", 100.0);
 
         double total = car.calculateRentValue(3);
@@ -18,7 +18,7 @@ class CarTest {
 
     @Test
     @DisplayName("Deve calcular o valor do aluguel com desconto")
-    void mustCalculateRentalValueWithDiscountTest(){
+    void mustCalculateRentalValueWithDiscount(){
         Car car = new Car("Sedan", 100.0);
         int daysQuantity = 6;
 

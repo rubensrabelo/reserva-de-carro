@@ -22,7 +22,7 @@ public class CarRepositorySQLTest {
 
     @Test
     @Sql(scripts = "/sql/popular-cars.sql")
-    void deveBuscarCarroPorModelo() {
+    void shouldSearchCarByModel() {
         List<CarEntity> cars = repository.findByModel("SUV");
 
         var car = cars.stream().findFirst().get();
@@ -31,6 +31,5 @@ public class CarRepositorySQLTest {
 
         assertThat(car.getDailyValue()).isEqualTo(150.0);
         assertThat(car.getModel()).isEqualTo("SUV");
-
     }
 }

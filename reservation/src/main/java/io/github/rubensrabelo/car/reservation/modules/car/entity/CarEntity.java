@@ -29,6 +29,13 @@ public class CarEntity {
         this.year = year;
     }
 
+    public CarEntity(Long id, String model, double dailyValue, int year) {
+        this.id = id;
+        this.model = model;
+        this.dailyValue = dailyValue;
+        this.year = year;
+    }
+
     public Long getId() {
         return id;
     }

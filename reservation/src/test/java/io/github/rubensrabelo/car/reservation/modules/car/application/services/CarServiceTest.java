@@ -144,5 +144,4 @@ class carServiceTest {
         verify(repository, times(1)).findAll();
         verifyNoMoreInteractions(repository);
     }
-
 }
